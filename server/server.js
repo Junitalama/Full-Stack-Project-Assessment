@@ -1,4 +1,4 @@
-const dotenv =require("dotenv");
+const dotenv = require("dotenv");
 dotenv.config();
 const express = require("express");
 const app = express();
@@ -19,22 +19,22 @@ app.use(bodyParser.json());
 
 
 
-app.get("/", (req, res) => {
-  db
-    .query("select * from videos")
-    .then((result) => res.json(result.rows))
-    .catch((err) => res.send(err));
-});
-
-// app.get("/videos/data", async (req, res) => {
-//   try {
-//     const videos = await pool.query("select * from videos");
-//     res.status(200).json(videos.rows);
-//   } catch (error) {
-//     console.log(error);
-//     res.status(500).send(error.message);
-//   }
+// app.get("/", (req, res) => {
+//   db
+//     .query("select * from videos")
+//     .then((result) => res.json(result.rows))
+//     .catch((err) => res.send(err));
 // });
+
+app.get("/videos/data", async (req, res) => {
+  try {
+    const videos = await db.query("select * from videos");
+    res.status(200).json(videos.rows);
+  } catch (error) {
+    console.log(error);
+    res.status(500).send(error.message);
+  }
+});
 
 // GET "/"
 // app.get("/", (req, res) => {
