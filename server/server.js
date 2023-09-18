@@ -23,8 +23,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/:id", (req, res) => {
-  let idRequested = Number(req.params.id);
-  db.query('select * from urls where id = $1', [idRequested])
-  .then(result = res.status(200).json(result.rows))
+  let id = Number(req.params.id);
+  db.query('select * from videos where id = $1', [id])
+  .then(result => res.status(200).json(result.rows))
   .catch(err => res.send(err));
 });
