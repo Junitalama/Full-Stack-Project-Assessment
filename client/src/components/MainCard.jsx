@@ -7,7 +7,7 @@ const MainCard = ({ video, onVote, onDelete }) => {
     <div className="video">
       <h2>{video.title}</h2>
       <iframe
-        width="450"
+        width="400"
         height="315"
         src={`https://www.youtube.com/embed/${videoId}`}
         title="YouTube video player"
@@ -17,8 +17,8 @@ const MainCard = ({ video, onVote, onDelete }) => {
       ></iframe>
       <p>Vote Score: {video.rating}</p>
       <div className="button-container">
-        <button onClick={() => onVote(video.id, "up")}>Up Vote</button>
-        <button onClick={() => onVote(video.id, "down")}>Down Vote</button>
+        <button><i class ="fa fa-thumbs-up" onClick={() => onVote(video.id, "up")}></i></button>
+        <button ><i class ="fa fa-thumbs-down" onClick={() => onVote(video.id, "down")}></i></button>
         <button onClick={() => onDelete(video.id)}>Delete</button>
       </div>
     </div>

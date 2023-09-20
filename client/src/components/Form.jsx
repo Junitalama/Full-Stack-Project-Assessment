@@ -15,6 +15,7 @@ const Form = ({ onAdd }) => {
 
   return (
     <form className="form" onSubmit={handleSubmit}>
+      <p className="add">Add your videos </p>
       <input
         type="text"
         placeholder="Title"
