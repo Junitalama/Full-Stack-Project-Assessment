@@ -1,12 +1,13 @@
 .App {
   text-align: center;
-  background-color:#5F4F4B;
+  background-color:black;
   color: wheat;
 }
 
 .card {
+
   text-align: center;
-  width: 190px;
+  width: 300;
   height: 254px;
   border-radius: 20px;
   padding: 5px;
@@ -15,6 +16,7 @@
 }
 
 .card__content {
+ 
   background: rgb(5, 6, 45);
   border-radius: 17px;
   width: 100%;
@@ -113,4 +115,17 @@ button:active {
 .likes {
   font-size: 2em;
   color: orange;
+
+}
+
+.video{
+
+  border: 1px solid blue;
+width:40em;
+margin-left: auto;
+margin-right: auto;
+background-color: rebeccapurple;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 3em;;
 }
