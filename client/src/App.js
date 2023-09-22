@@ -21,8 +21,7 @@ function App() {
           This is video Recommendation App. please feel free to browse and watch
           your favourite videos. you can also add your favourite videos and
           delete them if you dont like them. you can also like and dislike
-          videos. if you have any question ,please fill the form below and
-          contact me. Thank you and enjoy!!!
+          videos. if you have any question ,please fill the form below.Enjoy!!!
         </p>
       </header>
 
