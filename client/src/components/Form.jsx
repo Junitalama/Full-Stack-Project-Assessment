@@ -16,19 +16,23 @@ const Form = ({ onAdd }) => {
   return (
     <form className="form" onSubmit={handleSubmit}>
       <p className="add">Add your videos </p>
-      <input
-        type="text"
-        placeholder="Title"
-        value={title}
-        onChange={(e) => setTitle(e.target.value)}
-      />
-      <input
-        type="url"
-        placeholder="YouTube URL"
-        value={url}
-        onChange={(e) => setUrl(e.target.value)}
-      />
-      <button type="submit">Add Video</button>
+      <div>
+        <input
+          type="text"
+          placeholder="Title"
+          value={title}
+          onChange={(e) => setTitle(e.target.value)}
+        />
+      </div>
+      <div>
+        <input
+          type="url"
+          placeholder="YouTube URL"
+          value={url}
+          onChange={(e) => setUrl(e.target.value)}
+        />
+      </div>
+      <button type="submit">Add </button>
     </form>
   );
 };

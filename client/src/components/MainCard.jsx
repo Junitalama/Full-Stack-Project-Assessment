@@ -1,7 +1,8 @@
 import React from "react";
 
 const MainCard = ({ video, onVote, onDelete }) => {
-  const videoId = video.url.split("v=")[1];
+  // const videoId = video.url.split("v=")[1];
+  const videoId = video.url.split("=")[1] || video.url.split("embed/")[1]
 
   return (
     <div className="video">
