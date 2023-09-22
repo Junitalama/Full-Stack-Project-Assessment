@@ -18,10 +18,10 @@ function App() {
           alt="video pic"
         ></img>
         <p id="#About" className="About">
-          This is video Recommendation App. please feel free to browse and watch
-          your favourite videos. you can also add your favourite videos and
-          delete them if you dont like them. you can also like and dislike
-          videos. if you have any question ,please fill the form below.Enjoy!!!
+          This is video Recommendation App.please feel free to browse and watch
+          your favourite videos.you can also add your favourite videos &
+          delete them if you dont like them. you can also like & dislike
+          videos. if you have any question,please fill the form below.Enjoy!
         </p>
       </header>
 
