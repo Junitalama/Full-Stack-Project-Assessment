@@ -15,9 +15,8 @@ const Contact = () => {
         <div class="row">
           <div class="col-md-9 mb-md-0 mb-5">
             <form
-              id="contact-form"
-              name="contact-form"
-              action="mail.php"
+              id="contactform"
+              action="https://formsubmit.co/el/jiruti"
               method="POST"
             >
               <div class="row">
@@ -80,11 +79,11 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
+              <div class="text-center text-md-center">
+                <button type="submit">Send</button>
+              </div>
             </form>
 
-            <div class="text-center text-md-center">
-              <a class="btn btn-primary">Send</a>
-            </div>
             <div class="status"></div>
           </div>
 

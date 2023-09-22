@@ -14,7 +14,7 @@ const Form = ({ onAdd }) => {
   };
 
   return (
-    <form className="form" onSubmit={handleSubmit}>
+    <form  className="form" onSubmit={handleSubmit}>
       <p className="add">Add your videos </p>
       <div>
         <input
