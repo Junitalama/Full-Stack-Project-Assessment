@@ -17,7 +17,7 @@ function App() {
           src="https://play-lh.googleusercontent.com/dxWyx6Ze2ITl99bO08My8hhbUGtedAnlyzwoohxLbxhgeC0pO5rKq1K7g4i5mWgaAg=w240-h480-rw"
           alt="video pic"
         ></img>
-        <p id="#About" className="About">
+        <p id="About" className="About">
           This is video Recommendation App.please feel free to browse and watch
           your favourite videos.you can also add your favourite videos &
           delete them if you dont like them. you can also like & dislike

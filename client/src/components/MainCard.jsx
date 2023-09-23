@@ -5,7 +5,7 @@ const MainCard = ({ video, onVote, onDelete }) => {
   const videoId = video.url.split("=")[1] || video.url.split("embed/")[1]
 
   return (
-    <div className="video">
+    <div className="video" id = "recommendation">
       <h2>{video.title}</h2>
       <iframe
         width="330"
@@ -18,7 +18,7 @@ const MainCard = ({ video, onVote, onDelete }) => {
       ></iframe>
       <p>Vote Score: {video.rating}</p>
       <div className="button-container">
-        <button><i class ="fa fa-thumbs-up" onClick={() => onVote(video.id, "up")}></i></button>
+        <button ><i class ="fa fa-thumbs-up" onClick={() => onVote(video.id, "up")}></i></button>
         <button ><i class ="fa fa-thumbs-down" onClick={() => onVote(video.id, "down")}></i></button>
         <button onClick={() => onDelete(video.id)}>Delete</button>
       </div>

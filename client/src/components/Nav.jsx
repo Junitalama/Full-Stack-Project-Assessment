@@ -10,13 +10,11 @@ const Nav = () => {
           <span></span>
 
           <ul id="menu">
+            
             <a href="#About">
-              <li>Home</li>
-            </a>
-            <a href="#">
               <li>About</li>
             </a>
-            <a href="#recomendation">
+            <a href="#recommendation">
               <li>video Recommendation</li>
             </a>
             <a href="#contact">

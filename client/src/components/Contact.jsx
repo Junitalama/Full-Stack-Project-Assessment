@@ -15,7 +15,7 @@ const Contact = () => {
         <div class="row">
           <div class="col-md-9 mb-md-0 mb-5">
             <form
-              id="contactform"
+             
               action="https://formsubmit.co/el/jiruti"
               method="POST"
             >

@@ -40,7 +40,7 @@ app.post("/", (req, res) => {
   .catch(err => res.send(err));
 });
 
-app.post("/rating", (req, res) => {
+app.put("/rating", (req, res) => {
   const {id, rating} = req.body;
   db.query('update videos set rating = $1 where id = $2', [rating, id])
   .then(()=> res.sendStatus(204))
